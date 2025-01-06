@@ -65,7 +65,7 @@ To check if you are doing it right, address: rBnGX5KRERL2vMtZU2hDpF4osbhvichmvn 
 |01|address1 translated to AccountID|
 |02|address2 translated to AccountID|
 |03|address3 translated to AccountID|
-|041|address4 translated to AccountID|
+|04|address4 translated to AccountID|
 |05|address5 translated to AccountID|
 |06|address6 translated to AccountID|
 |07|address7 translated to AccountID|
