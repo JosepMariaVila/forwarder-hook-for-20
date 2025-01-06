@@ -1,5 +1,5 @@
 
-## Forwarder Hook for 20 Xahau Network
+## Forwarder Hook Business. Salary distribution 1 boss 20 employees 
 This is a example to demonstrate the use of a working hook in Xahau. The hook is programmed in C. It is recommended for educational purposes only. The creator is not responsible for any problems it may cause.
 
 **Please use new accounts to test this hook and test everything beforehand on Testnet just in case. I am not responsible for any losses. Create your own code if you are not sure.**
