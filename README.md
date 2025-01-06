@@ -1,4 +1,3 @@
-<img width="575" alt="forwarderhook" src="https://github.com/user-attachments/assets/56a8e15e-388e-47a1-ab93-8b9fa0893764" />
 
 ## Forwarder Hook for 20 Xahau Network
 This is a example to demonstrate the use of a working hook in Xahau. The hook is programmed in C. It is recommended for educational purposes only. The creator is not responsible for any problems it may cause.
