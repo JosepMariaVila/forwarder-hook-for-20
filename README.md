@@ -52,7 +52,7 @@ HookOn is activated to trigger for Invoke, Payment and URIToken_Buy. You can ver
 
 ## How to add addresses?
 
-The hook allows up to 20 addresses to which the amounts received can be distributed in equal parts. They will be registered with an identifier from 00 to 19. The addresses must be converted to Account ID. To do this you can use the following services:
+The hook allows up to 20 addresses to which the amounts received can be distributed in equal parts. They will be registered with an identifier from 00 to ... The addresses must be converted to Account ID. To do this you can use the following services:
 
 - https://hooks.services/tools/raddress-to-accountid 
 
@@ -86,7 +86,7 @@ To check if you are doing it right, address: rBnGX5KRERL2vMtZU2hDpF4osbhvichmvn 
 To add an account we must create an Invoke transaction from the hook account and add the following Hook parameters and values:
 
 ADD with the AccountID
-NUM with the position we want between 00 to 19
+NUM with the position we want between 00 to ...
 
 **Example:**
 
@@ -124,7 +124,7 @@ Also, we need to translate address account rLSYATPWj9UECGBEeVpxwEN16CuEREK3uR to
 
 To delete you have to create an Invoke transaction from the hook account and use as parameter DEL and the position between 00 to 19 as value. In case there is any address registered with that identifier, it will delete it.
 
-DEL and the position we want to delete between 00 to 19
+DEL and the position we want to delete between 00 to ...
 
 **Example:**
 
