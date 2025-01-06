@@ -14,7 +14,7 @@ This hook or other installed hooks could change the expected result. So it is im
 
 ## How to install the Forwarder Hook on Testnet?
 
-Follow the step by step tutorial I created to install it using the Xahau Hooks Builder.
+Follow the step by step tutorial I created to install this hook using the Xahau Hooks Builder: https://youtu.be/JF_xMS-4WCE
 
 ## How to add addresses?
 
@@ -73,9 +73,9 @@ To delete you have to create an Invoke transaction from the hook account and use
 
 DEL and the position we want to delete between 00 to 13 (uint8 format)
 
-## Video Tutorial (pending)
+## Video Tutorial Resources
 
-I created a video tutorial to learn how to use this hook on Xahau Testnet using the Hooks Builder: 
+Follow this video tutorial and use the following links to learn how to use this hook on Xahau Testnet using the Hooks Builder: https://youtu.be/JF_xMS-4WCE
 
 Links to follow the tutorial:
 
