@@ -122,7 +122,7 @@ Also, we need to translate address account rLSYATPWj9UECGBEeVpxwEN16CuEREK3uR to
 
 ## How to delete addresses?
 
-To delete you have to create an Invoke transaction from the hook account and use as parameter DEL and the position between 00 to 19 as value. In case there is any address registered with that identifier, it will delete it.
+To delete you have to create an Invoke transaction from the hook account and use as parameter DEL and the position between 00 to ... as value. In case there is any address registered with that identifier, it will delete it.
 
 DEL and the position we want to delete between 00 to ...
 
