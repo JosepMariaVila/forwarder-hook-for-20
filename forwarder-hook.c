@@ -74,12 +74,12 @@ int64_t hook(uint32_t reserved)
     int equal = 0;
     BUFFER_EQUAL(equal, hook_accid, account_field, 20);
 
-    if (!equal && tt == 99 && isAdd == 20 && isNum == 1 && isDel != 1 && num_buf[0] >= 0 && num_buf[0] < 15)
+    if (!equal && tt == 99 && isAdd == 20 && isNum == 1 && isDel != 1 && num_buf[0] >= 0 && num_buf[0] < 20)
     {
         state_set(SBUF(add_buf), num_buf, 32);
         accept(SBUF("Forwarder: Address added."), 1);
     }
-    if (!equal && tt == 99 && isDel == 1 && isAdd != 20 && isNum != 1 && num_buf[0] >= 0 && num_buf[0] < 15)
+    if (!equal && tt == 99 && isDel == 1 && isAdd != 20 && isNum != 1 && num_buf[0] >= 0 && num_buf[0] < 20)
     {
         state_set(0, 0, del_buf, 32);
         accept(SBUF("Forwarder: Address deleted."), 2);
