@@ -4,10 +4,10 @@
  * You can add destinations to the namespaces
  * Hook Parameters to Add destinations using Invoke
  * ADD: Xahau Address transformed  from rAddress To Account ID. You can use https://hooks.services/tools/raddress-to-accountid or https://transia-rnd.github.io/xrpl-hex-visualizer/ . To check if you are doing it right, address: rBnGX5KRERL2vMtZU2hDpF4osbhvichmvn will be translated to 6E7FE2948037180F3646CC248FAF2BCACD59893C
- * NUM: The number to identify the address and be able to delete it (Only accepts from 00 to 19)
+ * NUM: The number to identify the address and be able to delete it (Only accepts from 00 to ...)
 
  * Hook Parameters to delete destinations using Invoke
- * DEL: Number (from 00 to 19)
+ * DEL: Number (from 00 to ...)
 
  You can check the status of your namespace visiting https://xahau-testnet.xrplwin.com/ checking your hook account
 
