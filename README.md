@@ -77,7 +77,15 @@ DEL and the position we want to delete between 00 to 13 (uint8 format)
 
 ## Video Tutorial (pending)
 
-I created a video tutorial to learn how to use this hook on Xahau Testnet: [https://www.youtube.com/watch?v=rf8zSmrZkPA](https://www.youtube.com/watch?v=rf8zSmrZkPA)
+I created a video tutorial to learn how to use this hook on Xahau Testnet using the Hooks Builder: 
+
+Links to follow the tutorial:
+https://github.com/JosepMariaVila/xahau-forwarder-hook-business-1-boss-20-employees
+https://github.com/JosepMariaVila/xahau-forwarder-hook-business-1-boss-20-employees/blob/main/forwarder-hook.c
+https://hooks-builder.xrpl.org/develop
+https://hooks.services/tools/raddress-to-accountid
+https://transia-rnd.github.io/xrpl-hex-visualizer/
+https://xahau-testnet.xrplwin.com/account/rhoPokgLXa8PFVoEaKT76E8n87U58qhatp
 
 ## Credit
 
