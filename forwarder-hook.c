@@ -17,7 +17,7 @@
 
 int64_t hook(uint32_t reserved)
 {
-    // I create a 20 (?) txn reserve for PREPARE_PAYMENT_SIMPLE
+    // I create a 20 txn reserve for PREPARE_PAYMENT_SIMPLE
     etxn_reserve(20);
 
     // Counters to know how many address I have in the namespace and divide the final amount
