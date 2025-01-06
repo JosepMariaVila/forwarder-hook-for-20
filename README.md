@@ -1,7 +1,7 @@
 <img width="575" alt="forwarderhook" src="https://github.com/user-attachments/assets/56a8e15e-388e-47a1-ab93-8b9fa0893764" />
 
-## Forwarder Hook for Xahau Network
-This is a small example to demonstrate the use of a working hook in Xahau. The hook is programmed in C. It is recommended for educational purposes only. The creator is not responsible for any problems it may cause.
+## Forwarder Hook for 20 Xahau Network
+This is a example to demonstrate the use of a working hook in Xahau. The hook is programmed in C. It is recommended for educational purposes only. The creator is not responsible for any problems it may cause.
 
 **Please use new accounts to test this hook and test everything beforehand on Testnet just in case. I am not responsible for any losses. Create your own code if you are not sure.**
 
@@ -19,7 +19,7 @@ A hook is identified by its HookHash, on the following examples I provide some H
 
 ## How to install the Forwarder Hook on Testnet?
 
-This Hookhash only works for Testnet. The Hookhash is 1A9D1EEA98A9BE3C45A35872E51E36B6E73CBB7033A96CE0D98DB484215E0494
+This Hookhash only works for Testnet.
 
 HookOn is activated to trigger for Invoke, Payment and URIToken_Buy. You can verify it copying the HookOn value (FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFFFFFFFFFFF7FFFFFBFFFFE) in this website: https://richardah.github.io/xrpl-hookon-calculator/
 
@@ -59,10 +59,9 @@ HookOn is activated to trigger for Invoke, Payment and URIToken_Buy. You can ver
 
 ## How to add addresses?
 
-The hook allows up to 10 addresses to which the amounts received can be distributed in equal parts. They will be registered with an identifier from 00 to 09. The addresses must be converted to Account ID. To do this you can use the following services:
+The hook allows up to 20 addresses to which the amounts received can be distributed in equal parts. They will be registered with an identifier from 00 to 19. The addresses must be converted to Account ID. To do this you can use the following services:
 
 - https://hooks.services/tools/raddress-to-accountid 
-- https://transia-rnd.github.io/xrpl-hex-visualizer
 
 To check if you are doing it right, address: rBnGX5KRERL2vMtZU2hDpF4osbhvichmvn will be translated to 6E7FE292948037180F3646CC248FAF2BCACD59893C
 
@@ -74,12 +73,12 @@ To check if you are doing it right, address: rBnGX5KRERL2vMtZU2hDpF4osbhvichmvn 
 |02|address2 translated to AccountID|
 |03|address3 translated to AccountID|
 |..|..                              |
-|09|address9 translated to AccountID|
+|20|address20 translated to AccountID|
 
 To add an account we must create an Invoke transaction from the hook account and add the following Hook parameters and values:
 
 ADD with the AccountID
-NUM with the position we want between 00 to 09
+NUM with the position we want between 00 to 19
 
 **Example:**
 
@@ -115,9 +114,9 @@ Also, we need to translate address account rLSYATPWj9UECGBEeVpxwEN16CuEREK3uR to
 
 ## How to delete addresses?
 
-To delete you have to create an Invoke transaction from the hook account and use as parameter DEL and the position between 00 to 09 as value. In case there is any address registered with that identifier, it will delete it.
+To delete you have to create an Invoke transaction from the hook account and use as parameter DEL and the position between 00 to 19 as value. In case there is any address registered with that identifier, it will delete it.
 
-DEL and the position we want to delete between 00 to 09
+DEL and the position we want to delete between 00 to 19
 
 **Example:**
 
@@ -127,7 +126,7 @@ We need to translate DEL keyword to hex.
 
 - DEL = 44454C
 
-Numbers from 00 to 09 stay the same. No need to translate them.
+Numbers from 00 to 19 stay the same. No need to translate them.
 
     const prepared = {
       TransactionType: "Invoke",
@@ -167,8 +166,8 @@ Same as Testnet but changing the hookhash. The Hookhash is D22582E8BAF59FC682DEF
 
 ## Video Tutorial
 
-The user @[ainittomai](https://www.x.com/ainittomai) has created a video tutorial to learn how to use this hook on Xahau Testnet: [https://www.youtube.com/watch?v=rf8zSmrZkPA](https://www.youtube.com/watch?v=rf8zSmrZkPA)
+I created a video tutorial to learn how to use this hook on Xahau Testnet: [https://www.youtube.com/watch?v=rf8zSmrZkPA](https://www.youtube.com/watch?v=rf8zSmrZkPA)
 
-## Last Thoughts
+## credit
 
-Created by @[ekiserrepe](https://x.com/ekiserrepe). You can find more of my projects on [ekiserrepe.com](https://www.ekiserrepe.com)
+This hook was originally created by @[ekiserrepe](https://x.com/ekiserrepe). You can find more of his projects on [ekiserrepe.com](https://www.ekiserrepe.com)
