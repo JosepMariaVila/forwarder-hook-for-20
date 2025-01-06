@@ -77,7 +77,9 @@ DEL and the position we want to delete between 00 to 13 (uint8 format)
 
 ## Video Tutorial Resources
 
-Follow this video tutorial and use the following links to learn how to use this hook on Xahau Testnet using the Hooks Builder: https://youtu.be/JF_xMS-4WCE
+Follow this video tutorial and use the following links to learn how to use this hook on Xahau Testnet using the Hooks Builder: 
+
+https://youtu.be/JF_xMS-4WCE
 
 Links to follow the tutorial:
 
