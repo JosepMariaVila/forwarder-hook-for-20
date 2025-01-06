@@ -65,8 +65,23 @@ To check if you are doing it right, address: rBnGX5KRERL2vMtZU2hDpF4osbhvichmvn 
 |01|address1 translated to AccountID|
 |02|address2 translated to AccountID|
 |03|address3 translated to AccountID|
-|..|..                              |
-|20|address20 translated to AccountID|
+|041|address4 translated to AccountID|
+|05|address5 translated to AccountID|
+|06|address6 translated to AccountID|
+|07|address7 translated to AccountID|
+|08|address8 translated to AccountID|
+|09|address9 translated to AccountID|
+|0A|address10 translated to AccountID|
+|0B|address11 translated to AccountID|
+|0C|address12 translated to AccountID|
+|0D|address13 translated to AccountID|
+|0E|address14 translated to AccountID|
+|0F|address15 translated to AccountID|
+|10|address16 translated to AccountID|
+|11|address17 translated to AccountID|
+|12|address18 translated to AccountID|
+|13|address19 translated to AccountID|
+|14|address20 translated to AccountID|
 
 To add an account we must create an Invoke transaction from the hook account and add the following Hook parameters and values:
 
