@@ -17,8 +17,8 @@
 
 int64_t hook(uint32_t reserved)
 {
-    // I create a 10 txn reserve for PREPARE_PAYMENT_SIMPLE
-    etxn_reserve(10);
+    // I create a 20 (?) txn reserve for PREPARE_PAYMENT_SIMPLE
+    etxn_reserve(20);
 
     // Counters to know how many address I have in the namespace and divide the final amount
     uint8_t count[1] = {0x00U};
@@ -43,6 +43,16 @@ int64_t hook(uint32_t reserved)
     uint8_t account08[20] = {0x00U};
     uint8_t account09[20] = {0x00U};
     uint8_t account10[20] = {0x00U};
+    uint8_t account11[20] = {0x00U};
+    uint8_t account12[20] = {0x00U};
+    uint8_t account13[20] = {0x00U};
+    uint8_t account14[20] = {0x00U};
+    uint8_t account15[20] = {0x00U};
+    uint8_t account16[20] = {0x00U};
+    uint8_t account17[20] = {0x00U};
+    uint8_t account18[20] = {0x00U};
+    uint8_t account19[20] = {0x00U};
+    uint8_t account20[20] = {0x00U};
 
     // Check destination of the original txn
     uint8_t account_field[20];
@@ -64,12 +74,12 @@ int64_t hook(uint32_t reserved)
     int equal = 0;
     BUFFER_EQUAL(equal, hook_accid, account_field, 20);
 
-    if (!equal && tt == 99 && isAdd == 20 && isNum == 1 && isDel != 1 && num_buf[0] >= 0 && num_buf[0] < 10)
+    if (!equal && tt == 99 && isAdd == 20 && isNum == 1 && isDel != 1 && num_buf[0] >= 0 && num_buf[0] < 20)
     {
         state_set(SBUF(add_buf), num_buf, 32);
         accept(SBUF("Forwarder: Address added."), 1);
     }
-    if (!equal && tt == 99 && isDel == 1 && isAdd != 20 && isNum != 1 && num_buf[0] >= 0 && num_buf[0] < 10)
+    if (!equal && tt == 99 && isDel == 1 && isAdd != 20 && isNum != 1 && num_buf[0] >= 0 && num_buf[0] < 20)
     {
         state_set(0, 0, del_buf, 32);
         accept(SBUF("Forwarder: Address deleted."), 2);
@@ -115,6 +125,16 @@ int64_t hook(uint32_t reserved)
             unsigned char tx08[PREPARE_PAYMENT_SIMPLE_SIZE];
             unsigned char tx09[PREPARE_PAYMENT_SIMPLE_SIZE];
             unsigned char tx10[PREPARE_PAYMENT_SIMPLE_SIZE];
+            unsigned char tx11[PREPARE_PAYMENT_SIMPLE_SIZE];
+            unsigned char tx12[PREPARE_PAYMENT_SIMPLE_SIZE];
+            unsigned char tx13[PREPARE_PAYMENT_SIMPLE_SIZE];
+            unsigned char tx14[PREPARE_PAYMENT_SIMPLE_SIZE];
+            unsigned char tx15[PREPARE_PAYMENT_SIMPLE_SIZE];
+            unsigned char tx16[PREPARE_PAYMENT_SIMPLE_SIZE];
+            unsigned char tx17[PREPARE_PAYMENT_SIMPLE_SIZE];
+            unsigned char tx18[PREPARE_PAYMENT_SIMPLE_SIZE];
+            unsigned char tx19[PREPARE_PAYMENT_SIMPLE_SIZE];
+            unsigned char tx20[PREPARE_PAYMENT_SIMPLE_SIZE];
 
             if (state(SBUF(account01), count, 32) == 20)
             {
@@ -166,6 +186,56 @@ int64_t hook(uint32_t reserved)
             {
                 ++divide[0];
             }
+            ++count[0];
+            if (state(SBUF(account11), count, 32) == 20)
+            {
+                ++divide[0];
+            }
+            ++count[0];
+            if (state(SBUF(account12), count, 32) == 20)
+            {
+                ++divide[0];
+            }
+            ++count[0];
+            if (state(SBUF(account13), count, 32) == 20)
+            {
+                ++divide[0];
+            }
+            ++count[0];
+            if (state(SBUF(account14), count, 32) == 20)
+            {
+                ++divide[0];
+            }
+            ++count[0];
+            if (state(SBUF(account15), count, 32) == 20)
+            {
+                ++divide[0];
+            }
+            ++count[0];
+            if (state(SBUF(account16), count, 32) == 20)
+            {
+                ++divide[0];
+            }
+            ++count[0];
+            if (state(SBUF(account17), count, 32) == 20)
+            {
+                ++divide[0];
+            }
+            ++count[0];
+            if (state(SBUF(account18), count, 32) == 20)
+            {
+                ++divide[0];
+            }
+            ++count[0];
+            if (state(SBUF(account19), count, 32) == 20)
+            {
+                ++divide[0];
+            }
+            ++count[0];
+            if (state(SBUF(account20), count, 32) == 20)
+            {
+                ++divide[0];
+            }
 
             if (divide[0] == 0)
             {
@@ -173,6 +243,46 @@ int64_t hook(uint32_t reserved)
             }
             else
             {
+                PREPARE_PAYMENT_SIMPLE(tx20, drops_to_send / divide[0], account20, 0, 0);
+                uint8_t emithash20[32];
+                int64_t emit_result20 = emit(SBUF(emithash20), SBUF(tx20));
+                
+                PREPARE_PAYMENT_SIMPLE(tx19, drops_to_send / divide[0], account19, 0, 0);
+                uint8_t emithash19[32];
+                int64_t emit_result19 = emit(SBUF(emithash19), SBUF(tx19));
+                
+                PREPARE_PAYMENT_SIMPLE(tx18, drops_to_send / divide[0], account18, 0, 0);
+                uint8_t emithash18[32];
+                int64_t emit_result18 = emit(SBUF(emithash18), SBUF(tx18));
+                
+                PREPARE_PAYMENT_SIMPLE(tx17, drops_to_send / divide[0], account17, 0, 0);
+                uint8_t emithash17[32];
+                int64_t emit_result17 = emit(SBUF(emithash17), SBUF(tx17));
+                
+                PREPARE_PAYMENT_SIMPLE(tx16, drops_to_send / divide[0], account16, 0, 0);
+                uint8_t emithash16[32];
+                int64_t emit_result16 = emit(SBUF(emithash16), SBUF(tx16));
+                
+                PREPARE_PAYMENT_SIMPLE(tx15, drops_to_send / divide[0], account15, 0, 0);
+                uint8_t emithash15[32];
+                int64_t emit_result15 = emit(SBUF(emithash15), SBUF(tx15));
+                
+                PREPARE_PAYMENT_SIMPLE(tx14, drops_to_send / divide[0], account14, 0, 0);
+                uint8_t emithash14[32];
+                int64_t emit_result14 = emit(SBUF(emithash14), SBUF(tx14));
+                
+                PREPARE_PAYMENT_SIMPLE(tx13, drops_to_send / divide[0], account13, 0, 0);
+                uint8_t emithash13[32];
+                int64_t emit_result13 = emit(SBUF(emithash13), SBUF(tx13));
+                
+                PREPARE_PAYMENT_SIMPLE(tx12, drops_to_send / divide[0], account12, 0, 0);
+                uint8_t emithash12[32];
+                int64_t emit_result12 = emit(SBUF(emithash12), SBUF(tx12));
+                
+                PREPARE_PAYMENT_SIMPLE(tx11, drops_to_send / divide[0], account11, 0, 0);
+                uint8_t emithash11[32];
+                int64_t emit_result11 = emit(SBUF(emithash11), SBUF(tx11));
+                
                 PREPARE_PAYMENT_SIMPLE(tx10, drops_to_send / divide[0], account10, 0, 0);
                 uint8_t emithash10[32];
                 int64_t emit_result10 = emit(SBUF(emithash10), SBUF(tx10));
