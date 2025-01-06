@@ -26,8 +26,6 @@ The addresses must be converted to Account ID. To do this you can use the follow
 
 - https://hooks.services/tools/raddress-to-accountid 
 
-To check if you are doing it right, address: rBnGX5KRERL2vMtZU2hDpF4osbhvichmvn will be translated to 6E7FE292948037180F3646CC248FAF2BCACD59893C
-
 **Visual representation of the namespace or address book:**
 
 |identifier|address|
